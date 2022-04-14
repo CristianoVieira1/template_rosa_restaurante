@@ -1,7 +1,7 @@
 # RosaRestaurant
 
 <p align="center">
-  <img src="src\assets\img\banner.png" width="50%"/>
+  <img src="src\assets\img\banner.png" width="70%"/>
 </p>
 
 <br>
