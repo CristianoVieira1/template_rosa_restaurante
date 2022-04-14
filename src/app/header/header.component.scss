@@ -1,0 +1,332 @@
+$main-font-color: #f2b632;
+$main-white: #fff;
+$main-font-dark-gray: #4d4d4d;
+$main-footer-bg-color: #141414;
+$main-font-family: "Cheddar Jack",
+cursive;
+$main-primay-color: rgba(13, 110, 139, 0.75);
+$main-overlay-color: rgba(24, 39, 52, 0.85);
+$main-menu-speed: 1s;
+header {
+    width: vw;
+    height: 100vh;
+    background: linear-gradient(to bottom rgba(0, 0, 0, .9), transparent), url("../../assets/img/hero.jpeg") bottom no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+// .title {
+//     font-size: 2rem;
+//     margin: 2rem 0 0 5rem;
+//     font-family: 'Montserrat', sans-serif;
+//     font-weight: 300;
+// }
+// .title::before {
+//     content: "";
+//     width: 4.6rem;
+//     height: 1px;
+//     top: 6.2rem;
+//     transform: translateY(-50%);
+//     position: absolute;
+//     background-color: $main-white;
+//     border-radius: 8px;
+// }
+.logo {
+    display: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -5px;
+    font-size: 2rem;
+    margin: 3rem 0 0 5.5rem;
+    text-decoration: none;
+    //     font-family: 'Montserrat', sans-serif;
+    //     font-weight: 300;
+}
+
+.logo:hover {
+    text-decoration: none !important;
+    color: $main-font-color;
+}
+
+.logo:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2) !important;
+}
+
+.logo:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.menu {
+    margin: 3rem 7rem 0 0;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid $main-white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white !important;
+}
+
+.icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: #B6B6B6;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+.main-text {
+    line-height: 0;
+    margin: auto;
+    color: $main-white;
+}
+
+.main-text h1 {
+    font-family: $main-font-family;
+    color: $main-font-color;
+    font-size: 8rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+
+.main-text h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-right: -3px;
+    font-size: 2rem;
+    line-height: 1;
+    position: relative;
+}
+
+.main-text h2::before,
+.main-text h2::after {
+    content: "";
+    width: 5rem;
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background-color: $main-white;
+    border-radius: 8px;
+}
+
+.main-text h2::before {
+    left: -3rem;
+}
+
+.main-text h2::after {
+    right: -3rem;
+}
+
+.main-btn {
+    font-size: 1.5rem !important;
+    border: 2px solid $main-font-color !important;
+    padding: 2rem 2.5rem !important;
+    letter-spacing: 3px !important;
+    margin-right: -3px !important;
+    position: relative !important;
+    margin-top: 3rem !important;
+    background: transparent !important;
+    color: $main-white !important;
+}
+
+.main-btn:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2) !important;
+}
+
+.main-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+// .menu-spacer {
+//     flex: 1 1 auto;
+// }
+// navbar
+.menu-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-wrap .hamburger>div {
+    position: relative;
+    width: 70%;
+    height: 2px;
+    background-color: $main-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger>div:before,
+.menu-wrap .hamburger>div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+.menu-wrap .hamburger>div:after {
+    top: 10px;
+}
+
+.menu-wrap .toggler:checked+.hamburger>div {
+    transform: rotate(135deg);
+}
+
+.menu-wrap .toggler:checked+.hamburger>div:before,
+.menu-wrap .toggler:checked+.hamburger>div::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+//rotate on hover
+.menu-wrap .toggler:checked+.hamburger>div {
+    transform: rotate(225deg);
+}
+
+//show menu
+.menu-wrap .toggler:checked~.menu {
+    visibility: visible;
+}
+
+.menu-wrap .toggler:checked~.menu>div {
+    transform: scale(1);
+    transition-duration: $main-menu-speed;
+}
+
+.menu-wrap .toggler:checked~.menu>div>div {
+    opacity: 1;
+    transition: opacity 0, 4s ease;
+}
+
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-wrap .menu>div {
+    background: $main-overlay-color;
+    border-radius: 50%;
+    width: 250vw;
+    height: 250vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+
+.menu-wrap .menu>div>div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu>div>div>ul>li {
+    list-style: none;
+    color: $main-white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.menu-wrap .menu>div>div>ul>li>a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0, 4s ease;
+}
+
+.menu-wrap .menu>div>div>ul>li>a:hover {
+    border-bottom: 1px solid $main-white;
+}
